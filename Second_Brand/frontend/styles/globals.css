@@ -1,0 +1,52 @@
+:root {
+  --purple: #7126b5;
+  --purple2: #e2d4f0;
+  --reddark: #cc3434;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,li {
+  all: unset;
+}
+
+.max-width {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pill{
+background: #d3a6f8;
+color: white;
+padding: 10px;
+         
+}
+.pill.active{
+  background:#7126b5;
+
+}
+.pill:focus{
+  background:#7126b5;
+
+}
+
+.banner {
+  background-blend-mode: screen;
+  background: linear-gradient(#ffe9c9, #ffe9ca);
+}

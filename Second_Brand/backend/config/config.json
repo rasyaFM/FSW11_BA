@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "perdly",
+    "password": "root",
+    "database": "second_hand",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "perdly",
+    "password": "root",
+    "database": "second_hand",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "perdly",
+    "password": "root",
+    "database": "second_hand",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}

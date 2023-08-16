@@ -1,0 +1,547 @@
+{
+	"info": {
+		"_postman_id": "c98868db-d37d-4202-9d3b-f4fd0239dff9",
+		"name": "second_hand",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11036335"
+	},
+	"item": [
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Add Product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcl9uYW1lIjoicGVyZGx5IiwidXNlcl9lbWFpbCI6InBlcmRseUBnbWFpbC5jb20iLCJ1c2VyX3JvbGUiOjIsImlhdCI6MTY1NzE5MjQ2NX0.CMEmCT50fwuw1gNjKS2kfSZj5pt78l13zJF2koeqCMk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "product_name",
+									"value": "tas2",
+									"type": "text"
+								},
+								{
+									"key": "product_price",
+									"value": "1000",
+									"type": "text"
+								},
+								{
+									"key": "product_description",
+									"value": "murah banget",
+									"type": "text"
+								},
+								{
+									"key": "product_image",
+									"type": "file",
+									"src": "/C:/Users/setia/Desktop/nike_air_jordan_1_backpack_ret_1592671452_3da719fe_progressive.jpg"
+								},
+								{
+									"key": "category_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/products",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/products",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/products/6",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcl9uYW1lIjoic2VsbGVyMDEiLCJ1c2VyX2VtYWlsIjoic2VsbGVyMDFAZ21haWwuY29tIiwidXNlcl9yb2xlIjoxLCJpYXQiOjE2NTY2NzA5NTR9.zWSAC6biyUbmOVC3213x2XStHzR5gl6t_mOFzgfgFFo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "product_name",
+									"value": "barang perdly",
+									"type": "text"
+								},
+								{
+									"key": "product_price",
+									"value": "5000",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "product_description",
+									"value": "oke",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "product_image",
+									"type": "file",
+									"src": "/C:/Users/setia/Desktop/nike_air_jordan_1_backpack_ret_1592671452_3da719fe_progressive.jpg"
+								},
+								{
+									"key": "category_id",
+									"value": "1",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/products/8",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcl9uYW1lIjoic2VsbGVyMDEiLCJ1c2VyX2VtYWlsIjoic2VsbGVyMDFAZ21haWwuY29tIiwidXNlcl9yb2xlIjoxLCJpYXQiOjE2NTY2NzA5NTR9.zWSAC6biyUbmOVC3213x2XStHzR5gl6t_mOFzgfgFFo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/products/7",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product By Categroy Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/products/categories/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products",
+								"categories",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_name",
+									"value": "perdly",
+									"type": "text"
+								},
+								{
+									"key": "user_email",
+									"value": "perdly@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "user_role",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "user_password",
+									"value": "1234",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/users",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_email",
+									"value": "ahmad@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "user_password",
+									"value": "1234",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/users/login",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User By Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcl9uYW1lIjoib3JhbmciLCJ1c2VyX2VtYWlsIjoiaGFoYWhhQGdtYWlsLmNvbSIsImlhdCI6MTY1NjU5MzYwM30.CbiHSxRowA539zOPWusPKpaeFmniiKM_jei7lk_gckc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/users/2",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcl9uYW1lIjoicGVyZGx5IiwidXNlcl9lbWFpbCI6InBlcmRseUBnbWFpbC5jb20iLCJ1c2VyX3JvbGUiOjIsImlhdCI6MTY1NzE5MTY3M30._I8--ksY7CsaRM9cV7F3LsM8w_j0oSFAPG7oJpKK9AI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_regency",
+									"value": "batam",
+									"type": "text"
+								},
+								{
+									"key": "user_address",
+									"value": "kijang",
+									"type": "text"
+								},
+								{
+									"key": "user_phone",
+									"value": "0819991",
+									"type": "text"
+								},
+								{
+									"key": "user_image",
+									"type": "file",
+									"src": "/C:/Users/setia/Desktop/photo-1541823709867-1b206113eafd.jpg"
+								},
+								{
+									"key": "user_province",
+									"value": "Kepri",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/users",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Notifications",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwidXNlcl9uYW1lIjoiYWhtYWQiLCJ1c2VyX2VtYWlsIjoiYWhtYWRAZ21haWwuY29tIiwidXNlcl9yb2xlIjoxLCJpYXQiOjE2NTcxOTIyOTZ9.Uf1CWN0OZQ4I1hkOpRQryFdtppC31MFar-oQpaBnUMk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/users/notifications",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"notifications"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Transactions",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcl9uYW1lIjoicGVyZGx5IiwidXNlcl9lbWFpbCI6InBlcmRseUBnbWFpbC5jb20iLCJ1c2VyX3JvbGUiOjIsImlhdCI6MTY1NzE5MjQ2NX0.CMEmCT50fwuw1gNjKS2kfSZj5pt78l13zJF2koeqCMk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/users/transactions",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "Add Order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwidXNlcl9uYW1lIjoiYWhtYWQiLCJ1c2VyX2VtYWlsIjoiYWhtYWRAZ21haWwuY29tIiwidXNlcl9yb2xlIjoxLCJpYXQiOjE2NTcxOTI1ODh9.IhmoMC8ciccaJuKh9DDcSMJFtKQDtlByt6Qs1FN-Xks",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "order_price",
+									"value": "8920000",
+									"type": "text"
+								},
+								{
+									"key": "product_id",
+									"value": "8",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/orders",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Status Order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcl9uYW1lIjoic2VsbGVyMDEiLCJ1c2VyX2VtYWlsIjoic2VsbGVyMDFAZ21haWwuY29tIiwidXNlcl9yb2xlIjoyLCJpYXQiOjE2NTcxOTIxMTh9.drpBajrGSIRLc1w-ybHjX_EBBtRptjX5AHrQrbmws-c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "order_status",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/orders/34",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"orders",
+								"34"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
